@@ -1,14 +1,18 @@
 # Problem Solving Repo
 
 ## Directory Summary
-- **.git/branches**: 0 problems
-- **.git/hooks**: 14 problems
-- **.git/info**: 1 problems
-- **.git/logs**: 3 problems
-- **.git/objects**: 3 problems
-- **.git/refs**: 2 problems
-- **.github/workflows**: 1 problems
-- **Java/프로그래머스**: 96 problems
-- **Oracle/프로그래머스**: 146 problems
-- **Python3/프로그래머스**: 222 problems
+- **.git/logs/refs**: 2 problems
+- **.git/objects/info**: 0 problems
+- **.git/objects/pack**: 3 problems
+- **.git/refs/heads**: 1 problems
+- **.git/refs/remotes**: 1 problems
+- **.git/refs/tags**: 0 problems
+- **Java/프로그래머스/0**: 2 problems
+- **Java/프로그래머스/1**: 94 problems
+- **Oracle/프로그래머스/1**: 48 problems
+- **Oracle/프로그래머스/2**: 46 problems
+- **Oracle/프로그래머스/3**: 28 problems
+- **Oracle/프로그래머스/4**: 24 problems
+- **Python3/프로그래머스/0**: 212 problems
+- **Python3/프로그래머스/1**: 10 problems
 
