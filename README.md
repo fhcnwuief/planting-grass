@@ -1,12 +1,6 @@
 # Problem Solving Repo
 
 ## Directory Summary
-- **.git/logs/refs**: 0 problems
-- **.git/objects/info**: 0 problems
-- **.git/objects/pack**: 0 problems
-- **.git/refs/heads**: 0 problems
-- **.git/refs/remotes**: 0 problems
-- **.git/refs/tags**: 0 problems
 - **Java/프로그래머스/0**: 1 problems
 - **Java/프로그래머스/1**: 47 problems
 - **Oracle/프로그래머스/1**: 24 problems
