@@ -7,9 +7,13 @@ def count_files_by_platform(base_dir):
     for root, dirs, files in os.walk(base_dir):
         parts = root.split(os.sep)
         
+        # "Java/프로그래머스"나 "Java/백준" 등 플랫폼 폴더 추출
         if len(parts) > 2:
             platform = os.sep.join(parts[1:3])  # 상위 두 단계 (언어/플랫폼)
-            counts[platform] += len([f for f in files if not f.startswith('.')])  # 숨김 파일 제외
+            
+            # 숨김 파일 제외 ('.'으로 시작하는 파일)
+            visible_files = [f for f in files if not f.startswith('.')]
+            counts[platform] += len(visible_files)
 
     return counts
 
