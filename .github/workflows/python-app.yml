@@ -6,10 +6,10 @@ name: Update README
 on:
   push:
     branches:
-      - main
-  schedule:
-    - cron: '0 0 * * *'  # 매일 자정 실행
-
+      - main  # main 브랜치에 변경사항이 푸시될 때 실행
+  pull_request:
+    branches:
+      - main  # main 브랜치로 PR이 생성되거나 업데이트될 때 실행
 jobs:
   update-readme:
     runs-on: ubuntu-latest
