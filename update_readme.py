@@ -7,13 +7,13 @@ def count_files_by_platform(base_dir):
     for root, dirs, files in os.walk(base_dir):
         parts = root.split(os.sep)
         
-        # "Java/프로그래머스/0" 등 플랫폼별 디렉토리 추출
-        if len(parts) > 3:
-            folder_path = os.sep.join(parts[1:4])  # 상위 3단계 결합 (언어/플랫폼/난이도)
-            
-            # 숨김 파일 제외 ('.'으로 시작하는 파일)
-            visible_files = [f for f in files if not f.startswith('.')]
-            counts[folder_path] += len(visible_files)
+         # "Java/프로그래머스/0/1000"까지 디렉토리 추출
+        if len(parts) > 4:
+            problem_folder = os.sep.join(parts[1:5])  # 상위 4단계 결합 (언어/플랫폼/난이도/문제번호)
+
+            # 문제 폴더(1000, 1001 등)가 기준이므로, 폴더별로 1씩 카운트
+            counts[problem_folder] += 1
+            # 하위 파일은 무시
 
     return counts
 
