@@ -5,7 +5,9 @@ def count_files_by_platform(base_dir):
     counts = defaultdict(int)
 
     for root, dirs, files in os.walk(base_dir):
-        parts = root.split(os.sep)
+        # .git 디렉토리 건너뛰기
+        if ".git" in parts := root.split(os.sep):
+            continue  # .git 디렉토리는 탐색하지 않음
         
         # "Java/프로그래머스/0"까지 디렉토리 추출
         if len(parts) > 3:
