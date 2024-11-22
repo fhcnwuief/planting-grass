@@ -27,7 +27,7 @@ def update_readme(repo_path, counts):
         readme.write("# Problem Solving Repo\n\n")
         readme.write("## Directory Summary\n")
         for platform, count in sorted(counts.items()):
-            if ".git" not in problem_folder:  # .git이 포함된 항목은 출력하지 않음
+            if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
                 readme.write(f"- **{platform}**: {count} problems\n")
         readme.write("\n")
 
