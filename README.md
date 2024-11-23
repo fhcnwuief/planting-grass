@@ -33,15 +33,15 @@
 ```
 ├── ./
         ├── info/
-        ├── branches/
+        └── branches/
         ├── refs/
             ├── heads/
             ├── remotes/
-            ├── tags/
+            └── tags/
         ├── logs/
             ├── refs/
         ├── objects/
-            ├── info/
+            └── info/
             ├── pack/
         ├── hooks/
         ├── workflows/
