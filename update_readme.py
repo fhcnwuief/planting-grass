@@ -18,13 +18,11 @@ def count_files_by_platform(base_dir):
             # README.md 파일만 포함
             readme_files = [f for f in files if f == "README.md"]
             counts[problem_folder] += len(readme_files)
-
     return counts
     
 # README 파일 작성
 def update_readme(repo_path, counts):
     def get_directory_structure(base_dir):
-        """디렉토리 구조를 Markdown 형식으로 반환"""
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
         visited = set()  # 이미 방문한 디렉토리 추적
@@ -53,12 +51,13 @@ def update_readme(repo_path, counts):
             # for directory in dirs:
             #     structure.append(f"{indent}    ├── {directory}/")
             
-            # 파일 출력
-            for file in files:
-                 # if file == "README.md" or file == "update_readme.py":
-                 if file == "update_readme.py":
-                     structure.append(f"{indent}    ├── README.md")
-                     structure.append(f"{indent}    └── {file}")
+            # 하위 디렉토리가 없을 경우에만 출력하도록
+            if not dirs:
+                structure.append(f"{indent}    ├── README.md")
+                for file in files:
+                     # if file == "README.md" or file == "update_readme.py":
+                     if file == "update_readme.py":
+                         structure.append(f"{indent}    └── {file}")
         
         return "\n".join(structure)
 
