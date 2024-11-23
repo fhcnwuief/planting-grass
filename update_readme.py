@@ -18,10 +18,13 @@ def count_files_by_platform(base_dir):
             # README.md 파일만 포함
             readme_files = [f for f in files if f == "README.md"]
             counts[problem_folder] += len(readme_files)
-    return counts
+
+    # counts의 총합 계산
+    total_count = sum(counts.values())
+    return counts,total_count
     
 # README 파일 작성
-def update_readme(repo_path, counts):
+def update_readme(repo_path, counts, total_count):
     def get_directory_structure(base_dir):
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
@@ -63,10 +66,6 @@ def update_readme(repo_path, counts):
             if level >= MAX_LEVEL:
                 dirs.clear()
                 continue
-            
-            # 하위 디렉토리 출력
-            # for directory in dirs:
-            #     structure.append(f"{indent}    ├── {directory}/")
 
         # 루트 레벨에서 파일 추가
         root_files = ["README.md", "update_readme.py"]
@@ -78,7 +77,6 @@ def update_readme(repo_path, counts):
                                  
         return "\n".join(structure)
 
-        
     # README 파일 작성
     readme_path = os.path.join(repo_path, "README.md")
     with open(readme_path, 'w') as readme:
@@ -98,15 +96,16 @@ def update_readme(repo_path, counts):
         # 디렉토리 요약
         readme.write("## 디렉토리 요약\n")
         # 디렉토리 구조 추가
-        readme.write("## 디렉토리 구조\n")
+        readme.write("### 디렉토리 구조\n")
         readme.write("```\n")
         readme.write(get_directory_structure(repo_path))  # 디렉토리 구조 삽입
         readme.write("\n```\n")
         
         # 문제풀이 현황 테이블 작성
         readme.write("## 문제 풀이 현황\n")
+        readme.write(f"총 {total_count}개의 문제를 풀었습니다🫶")
         readme.write("| 디렉토리           | 문제 개수 |\n")
-        readme.write("|--------------------|----------------|\n")
+        readme.write("|--------------------|:----------------:|\n")
         for problem_folder, count in sorted(counts.items()):
             readme.write(f"| {problem_folder} | {count} |\n")
         readme.write("\n")
@@ -118,5 +117,5 @@ def update_readme(repo_path, counts):
 
 if __name__ == "__main__":
     REPO_PATH = "."  # 현재 디렉토리 기준
-    counts = count_files_by_platform(REPO_PATH)
-    update_readme(REPO_PATH, counts)
+    counts, total_count = count_files_by_platform(REPO_PATH)
+    update_readme(REPO_PATH, counts, total_count)
