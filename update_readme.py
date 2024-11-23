@@ -26,6 +26,7 @@ def update_readme(repo_path, counts):
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
         visited = set()  # 이미 방문한 디렉토리 추적
+        MAX_LEVEL = 3
         
         for root, dirs, files in os.walk(base_dir):
 
@@ -48,18 +49,24 @@ def update_readme(repo_path, counts):
             # 마지막 항목인지 확인
             # is_last = len(dirs) == 0 and len(files) == 0
             # 탐색의 깊이로 판단
-            is_last = level == 3
-            marker = "└──" if is_last else "├──"
+            # is_last = level == MAX_LEVEL
+            # marker = "└──" if is_last else "├──"
 
             # 폴더 추가
-            structure.append(f"{indent}{marker} {folder_name}/")
+            # structure.append(f"{indent}{marker} {folder_name}/")
+
+            # 디렉토리 순서 확인 (마지막 디렉토리만 '└──' 적용)
+            if len(dirs) == 0:  # 더 이상 하위 디렉토리가 없다면, 마지막 디렉토리
+                structure.append(f"{indent}└── {folder_name}/")
+            else:  # 그렇지 않으면, '├──'를 사용
+                structure.append(f"{indent}├── {folder_name}/")
             
             # 디렉토리와 파일을 분리하고 정렬
             dirs.sort()
             files.sort()
 
             # 탐색의 깊이가 3을 초과하면 하위 디렉토리 탐색 중단
-            if level >= 3:
+            if level >= MAX_LEVEL:
                 dirs.clear()
                 continue
             
