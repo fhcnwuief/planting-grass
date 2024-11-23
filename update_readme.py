@@ -25,6 +25,7 @@ def count_files_by_platform(base_dir):
 def update_readme(repo_path, counts):
     def get_directory_structure(base_dir):
         """디렉토리 구조를 Markdown 형식으로 반환"""
+         """README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환"""
         structure = []
         for root, dirs, files in os.walk(base_dir):
             parts = root.split(os.sep)
@@ -33,11 +34,12 @@ def update_readme(repo_path, counts):
             folder_name = os.path.basename(root)
             if folder_name != ".git":  # .git 디렉토리 제외
                 structure.append(f"{indent}├── {folder_name}/")
-                for i, file in enumerate(sorted(files)):
-                    connector = "└──" if i == len(files) - 1 else "├──"
-                    structure.append(f"{indent}    {connector} {file}")
+                for file in sorted(files):
+                    if file == "README.md":  # README.md 발견 시 탐색 종료
+                        structure.append(f"{indent}    └── {file}")
+                        return "\n".join(structure)
+                    structure.append(f"{indent}    ├── {file}")
         return "\n".join(structure)
-
         
     # README 파일 작성
     readme_path = os.path.join(repo_path, "README.md")
