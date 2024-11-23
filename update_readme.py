@@ -61,7 +61,7 @@ def update_readme(repo_path, counts):
         readme.write("\n")
 
         # 문제풀이 현황 테이블 작성
-         readme.write("## 문제 풀이 현황\n")
+        readme.write("## 문제 풀이 현황\n")
         readme.write("| 디렉토리           | README 파일 수 |\n")
         readme.write("|--------------------|----------------|\n")
         for problem_folder, count in sorted(counts.items()):
