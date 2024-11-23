@@ -37,10 +37,11 @@ def update_readme(repo_path, counts):
                     if file != "README.md":  # README.md 제외
                         structure.append(f"{indent}    - {file}")
         return "\n".join(structure)
-       
+
+    # README 파일 작성
     readme_path = os.path.join(repo_path, "README.md")
     with open(readme_path, 'w') as readme:
-        # README 수정
+
         # 헤더와 소개 작성
         readme.write("# Problem Solving Repo\n\n")
         # readme.write("![Banner](https://example.com/banner.png)\n\n")  # 예시 이미지 URL
