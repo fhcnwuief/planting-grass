@@ -46,7 +46,7 @@ def update_readme(repo_path, counts):
             visited.add(root)
 
             # 마지막 항목인지 확인
-            is_last = len(dirs) + len(files) == 0
+            is_last = len(dirs) ==0 and len(files) == 0
             marker = "└──" if is_last else "├──"
 
             # 폴더 추가
@@ -114,10 +114,10 @@ def update_readme(repo_path, counts):
             readme.write(f"| {problem_folder} | {count} |\n")
         readme.write("\n")
 
-        for platform, count in sorted(counts.items()):
-            if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
-                readme.write(f"- **{platform}**: {count} problems\n")
-        readme.write("\n")
+        # for platform, count in sorted(counts.items()):
+        #     if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
+        #         readme.write(f"- **{platform}**: {count} problems\n")
+        # readme.write("\n")
 
 if __name__ == "__main__":
     REPO_PATH = "."  # 현재 디렉토리 기준
