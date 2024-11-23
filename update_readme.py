@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 
+# 저장된 총 문제 수 세기
 def count_files_by_platform(base_dir):
     counts = defaultdict(int)
 
@@ -25,6 +26,7 @@ def count_files_by_platform(base_dir):
     
 # README 파일 작성
 def update_readme(repo_path, counts, total_count):
+    # 레포지토리 수정 시 자동 업데이트
     def get_directory_structure(base_dir):
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
@@ -82,21 +84,24 @@ def update_readme(repo_path, counts, total_count):
     with open(readme_path, 'w') as readme:
 
         # 헤더와 소개 작성
-        readme.write("# Problem Solving Repo\n\n")
+        readme.write("# CODING TEST PRACTICE \n\n")
+        readme.write("목표 : 시간 나는 대로 문제 풀고, 저장하기! \n")
         # readme.write("![Banner](https://example.com/banner.png)\n\n")  # 예시 이미지 URL
         readme.write("## 소개\n")
-        readme.write("이 저장소는 프로그래밍 문제 풀이를 기록한 공간입니다. 주요 플랫폼은 **백준**, **프로그래머스**입니다.\n\n")
+        readme.write("이 저장소는 프로그래밍 문제 풀이를 기록한 공간입니다.")
+        readme.write("주요 플랫폼은 **백준**, **프로그래머스**입니다.\n\n")
+        readme.write("코드 업로드 by.백준허브")
         
         # 목차
         readme.write("## 목차\n")
         readme.write("- [소개](#소개)\n")
+        readme.write("- [디렉토리 요약](#디렉토리-구조-및-요약)\n\n")
         readme.write("- [문제 풀이 현황](#문제-풀이-현황)\n")
-        readme.write("- [디렉토리 요약](#디렉토리-요약)\n\n")
+        
         
         # 디렉토리 요약
-        readme.write("## 디렉토리 요약\n")
+        readme.write("## 디렉토리 구조 및 요약\n")
         # 디렉토리 구조 추가
-        readme.write("### 디렉토리 구조\n")
         readme.write("```\n")
         readme.write(get_directory_structure(repo_path))  # 디렉토리 구조 삽입
         readme.write("\n```\n")
