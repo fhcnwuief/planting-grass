@@ -26,7 +26,7 @@
         ├── 프로그래머스/
             ├── 0/
             ├── 1/
-    └── README.md
+    ├── README.md
     └── update_readme.py
 ```
 ## 문제 풀이 현황
