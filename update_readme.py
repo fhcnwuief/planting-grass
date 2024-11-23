@@ -40,18 +40,22 @@ def update_readme(repo_path, counts):
             # 중복 디렉토리 추적
             visited.add(root)
 
+            # 마지막 항목인지 확인
+            is_last = len(dirs) + len(files) == 0
+            marker = "└──" if is_last else "├──"
+
             # 폴더 추가
-            structure.append(f"{indent}├── {folder_name}/")
+            structure.append(f"{indent}{marker} {folder_name}/")
             
             # 디렉토리와 파일을 분리하고 정렬
             dirs.sort()
             files.sort()
 
+            # 탐색의 깊이가 3을 초과하면 하위 디렉토리 탐색 중단
             if level >= 3:
                 dirs.clear()
                 continue
-
-        
+            
             # 하위 디렉토리 출력
             # for directory in dirs:
             #     structure.append(f"{indent}    ├── {directory}/")
@@ -63,7 +67,13 @@ def update_readme(repo_path, counts):
             #          # if file == "README.md" or file == "update_readme.py":
             #          if file == "update_readme.py":
             #              structure.append(f"{indent}    └── {file}")
-        
+
+            # # 하위 디렉토리 및 파일 추가
+            # for i, sub_item in enumerate(dirs + files):
+            #     sub_indent = indent + "    "
+            #     sub_marker = "└──" if i == len(dirs + files) - 1 else "├──"
+            #     structure.append(f"{sub_indent}{sub_marker} {sub_item}")
+                
         return "\n".join(structure)
 
         
