@@ -27,31 +27,36 @@ def update_readme(repo_path, counts):
         """디렉토리 구조를 Markdown 형식으로 반환"""
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
+        visited = set()  # 이미 방문한 디렉토리 추적
+        
         for root, dirs, files in os.walk(base_dir):
             parts = root.split(os.sep)
             level = len(parts) - len(base_dir.split(os.sep))  # 디렉토리 깊이 계산
             indent = "    " * level  # 계층별 들여쓰기
             folder_name = os.path.basename(root)
             
-            # .git, .github를 포함한 불필요한 디렉토리 제외
-            if folder_name in [".git", ".github", "__pycache__"]:
+            # .git, .github, 중복된 디렉토리 제외
+            if folder_name in [".git", ".github", "__pycache__"] or root in visited:
                 continue
-            
+
+            # 중복 디렉토리 추적
+            visited.add(root)
+
             # 폴더 추가
             structure.append(f"{indent}├── {folder_name}/")
             
             # 디렉토리와 파일을 분리하고 정렬
             dirs.sort()
-            # files.sort()
+            files.sort()
             
             # 하위 디렉토리 출력
             for directory in dirs:
                 structure.append(f"{indent}    ├── {directory}/")
             
-            # # 파일 출력
-            # for file in files:
-            #     if file == "README.md" or file == "update_readme.py":
-            #         structure.append(f"{indent}    └── {file}")
+            # 파일 출력
+            for file in files:
+                if file == "README.md" or file == "update_readme.py":
+                    structure.append(f"{indent}    └── {file}")
         
         return "\n".join(structure)
 
