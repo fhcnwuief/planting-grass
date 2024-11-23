@@ -46,7 +46,9 @@ def update_readme(repo_path, counts):
             visited.add(root)
 
             # 마지막 항목인지 확인
-            is_last = len(dirs) ==0 and len(files) == 0
+            # is_last = len(dirs) == 0 and len(files) == 0
+            # 탐색의 깊이로 판단
+            is_last = level == 3
             marker = "└──" if is_last else "├──"
 
             # 폴더 추가
