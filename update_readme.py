@@ -1,4 +1,4 @@
-ㅇimport os
+import os
 from collections import defaultdict
 
 def count_files_by_platform(base_dir):
