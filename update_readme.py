@@ -52,12 +52,12 @@ def update_readme(repo_path, counts):
             #     structure.append(f"{indent}    ├── {directory}/")
             
             # 하위 디렉토리가 없을 경우에만 출력하도록
-            if not dirs:
-                structure.append(f"{indent}    ├── README.md")
-                for file in files:
-                     # if file == "README.md" or file == "update_readme.py":
-                     if file == "update_readme.py":
-                         structure.append(f"{indent}    └── {file}")
+            # if not dirs:
+            #     structure.append(f"{indent}    ├── README.md")
+            #     for file in files:
+            #          # if file == "README.md" or file == "update_readme.py":
+            #          if file == "update_readme.py":
+            #              structure.append(f"{indent}    └── {file}")
         
         return "\n".join(structure)
 
