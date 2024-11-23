@@ -77,7 +77,7 @@ def update_readme(repo_path, counts):
             #              structure.append(f"{indent}    └── {file}")
 
             # level이 0이여야 하는지 1이여야 하는지...?
-            if level == 1:
+            if not dirs and level == 1:
                 for file in files:
                     if file == "README.md" or file == "update_readme.py":
                         structure.append(f"{indent}    └── {file}")
