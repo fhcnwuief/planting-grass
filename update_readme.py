@@ -100,25 +100,24 @@ def update_readme(repo_path, counts):
         
         # 디렉토리 요약
         readme.write("## 디렉토리 요약")
+        # 디렉토리 구조 추가
+        # readme.write("## 디렉토리 구조\n")
+        readme.write("```\n")
+        readme.write(get_directory_structure(repo_path))  # 디렉토리 구조 삽입
+        readme.write("\n```\n")
         
-        for platform, count in sorted(counts.items()):
-            if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
-                readme.write(f"- **{platform}**: {count} problems\n")
-        readme.write("\n")
-
         # 문제풀이 현황 테이블 작성
         readme.write("## 문제 풀이 현황\n")
-        readme.write("| 디렉토리           | README 파일 수 |\n")
+        readme.write("| 디렉토리           | 문제 개수 |\n")
         readme.write("|--------------------|----------------|\n")
         for problem_folder, count in sorted(counts.items()):
             readme.write(f"| {problem_folder} | {count} |\n")
         readme.write("\n")
 
-        # 디렉토리 구조 추가
-        readme.write("## 디렉토리 구조\n")
-        readme.write("```\n")
-        readme.write(get_directory_structure(repo_path))  # 디렉토리 구조 삽입
-        readme.write("\n```\n")
+        for platform, count in sorted(counts.items()):
+            if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
+                readme.write(f"- **{platform}**: {count} problems\n")
+        readme.write("\n")
 
 if __name__ == "__main__":
     REPO_PATH = "."  # 현재 디렉토리 기준
