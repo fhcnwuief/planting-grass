@@ -67,28 +67,14 @@ def update_readme(repo_path, counts):
             # 하위 디렉토리 출력
             # for directory in dirs:
             #     structure.append(f"{indent}    ├── {directory}/")
-            
-            # 하위 디렉토리가 없을 경우에만 출력하도록
-            # if not dirs:
-            #     structure.append(f"{indent}    ├── README.md")
-            #     for file in files:
-            #          # if file == "README.md" or file == "update_readme.py":
-            #          if file == "update_readme.py":
-            #              structure.append(f"{indent}    └── {file}")
 
-            # 디렉토리 내에서 마지막 파일을 `└──`로 표시
-            for i, file in enumerate(files):
-                # 파일이 `README.md` 또는 `update_readme.py`일 때만 마지막 항목으로 추가
-                marker = "└──" if i == len(files) - 1 else "├──"
-                if file == "README.md" or file == "update_readme.py":
-                    structure.append(f"{indent}    {marker} {file}")
-
-            # # 하위 디렉토리 및 파일 추가
-            # for i, sub_item in enumerate(dirs + files):
-            #     sub_indent = indent + "    "
-            #     sub_marker = "└──" if i == len(dirs + files) - 1 else "├──"
-            #     structure.append(f"{sub_indent}{sub_marker} {sub_item}")
-                
+        # 루트 레벨에서 파일 추가
+        root_files = ["README.md", "update_readme.py"]
+        for file in root_files:
+            file_path = os.path.join(base_dir, file)
+            if os.path.exists(file_path):
+                structure.append(f"    └── {file}")
+                                 
         return "\n".join(structure)
 
         
