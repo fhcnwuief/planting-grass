@@ -44,9 +44,14 @@ def update_readme(repo_path, counts):
             structure.append(f"{indent}├── {folder_name}/")
             
             # 디렉토리와 파일을 분리하고 정렬
-            # dirs.sort()
+            dirs.sort()
             files.sort()
-            
+
+            if level >= 3:
+                dirs.clear()
+                continue
+
+        
             # 하위 디렉토리 출력
             # for directory in dirs:
             #     structure.append(f"{indent}    ├── {directory}/")
