@@ -26,7 +26,7 @@ def update_readme(repo_path, counts):
     def get_directory_structure(base_dir):
         """디렉토리 구조를 Markdown 형식으로 반환"""
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
-       structure = []
+        structure = []
         for root, dirs, files in os.walk(base_dir):
             parts = root.split(os.sep)
             level = len(parts) - len(base_dir.split(os.sep))  # 디렉토리 깊이 계산
