@@ -32,18 +32,6 @@
 ## 디렉토리 구조
 ```
 ├── ./
-        ├── info/
-        └── branches/
-        ├── refs/
-            ├── heads/
-            ├── remotes/
-            └── tags/
-        ├── logs/
-            ├── refs/
-        ├── objects/
-            └── info/
-            ├── pack/
-        ├── hooks/
         ├── workflows/
     ├── Java/
         ├── 프로그래머스/
