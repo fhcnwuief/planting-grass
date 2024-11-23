@@ -1,4 +1,4 @@
-import os
+ㅇimport os
 from collections import defaultdict
 
 def count_files_by_platform(base_dir):
@@ -32,11 +32,12 @@ def update_readme(repo_path, counts):
             indent = "    " * level  # 계층별 들여쓰기
             folder_name = os.path.basename(root)
             if folder_name != ".git":  # .git 디렉토리 제외
-                structure.append(f"{indent}- **{folder_name}/**")
-                for file in sorted(files):
-                    if file != "README.md":  # README.md 제외
-                        structure.append(f"{indent}    - {file}")
+                structure.append(f"{indent}├── {folder_name}/")
+                for i, file in enumerate(sorted(files)):
+                    connector = "└──" if i == len(files) - 1 else "├──"
+                    structure.append(f"{indent}    {connector} {file}")
         return "\n".join(structure)
+
         
     # README 파일 작성
     readme_path = os.path.join(repo_path, "README.md")
@@ -55,6 +56,7 @@ def update_readme(repo_path, counts):
         readme.write("- [디렉토리 요약](#디렉토리-요약)\n\n")
         
         # 디렉토리 요약
+        readme.write("## 디렉토리 요약")
         for platform, count in sorted(counts.items()):
             if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
                 readme.write(f"- **{platform}**: {count} problems\n")
