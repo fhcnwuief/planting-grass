@@ -99,9 +99,9 @@ def update_readme(repo_path, counts):
         readme.write("- [디렉토리 요약](#디렉토리-요약)\n\n")
         
         # 디렉토리 요약
-        readme.write("## 디렉토리 요약")
+        readme.write("## 디렉토리 요약\n")
         # 디렉토리 구조 추가
-        # readme.write("## 디렉토리 구조\n")
+        readme.write("## 디렉토리 구조\n")
         readme.write("```\n")
         readme.write(get_directory_structure(repo_path))  # 디렉토리 구조 삽입
         readme.write("\n```\n")
