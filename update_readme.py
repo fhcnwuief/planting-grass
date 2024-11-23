@@ -90,7 +90,7 @@ def update_readme(repo_path, counts, total_count):
         readme.write("## 소개\n")
         readme.write("이 저장소는 프로그래밍 문제 풀이를 기록한 공간입니다. \n")
         readme.write("주요 플랫폼은 **백준**, **프로그래머스**입니다.\n\n")
-        readme.write("Uploaded by.백준허브\n"\n)
+        readme.write("Uploaded by.백준허브\n\n")
         
         # 목차
         readme.write("## 목차\n")
