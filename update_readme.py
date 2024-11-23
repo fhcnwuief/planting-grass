@@ -29,8 +29,8 @@ def update_readme(repo_path, counts):
         
         for root, dirs, files in os.walk(base_dir):
 
-            # .git 디렉토리 내부를 제외
-            if ".git",".github" in root.split(os.sep):
+            # .git 및 .github 디렉토리 내부를 제외
+            if any(excluded in root.split(os.sep) for excluded in [".git", ".github"]):
                 continue
             
             parts = root.split(os.sep)
@@ -38,8 +38,8 @@ def update_readme(repo_path, counts):
             indent = "    " * level  # 계층별 들여쓰기
             folder_name = os.path.basename(root)
             
-            # .git, .github, _pycache__ 등 특정 디렉토리 제외, 중복된 디렉토리 제외
-            if folder_name in [".git", ".github", "__pycache__"] or root in visited:
+            # __pycache__ 등 특정 디렉토리 제외
+            if folder_name in ["__pycache__"] or root in visited:
                 continue
 
             # 중복 디렉토리 추적
