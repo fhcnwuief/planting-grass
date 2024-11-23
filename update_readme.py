@@ -32,19 +32,27 @@ def update_readme(repo_path, counts):
             level = len(parts) - len(base_dir.split(os.sep))  # 디렉토리 깊이 계산
             indent = "    " * level  # 계층별 들여쓰기
             folder_name = os.path.basename(root)
-            if folder_name != ".git":  # .git 디렉토리 제외
-                structure.append(f"{indent}├── {folder_name}/")
-                
-                # 디렉토리와 파일을 분리하고 정렬
-                dirs.sort()
-                files.sort()
-                
-                for directory in dirs:
-                    structure.append(f"{indent}    ├── {directory}/")
-                for i, file in enumerate(files):
-                    connector = "└──" if i == len(files) - 1 else "├──"
-                    structure.append(f"{indent}    {connector} {file}")
-                    
+            
+            # .git, .github를 포함한 불필요한 디렉토리 제외
+            if folder_name in [".git", ".github", "__pycache__"]:
+                continue
+            
+            # 폴더 추가
+            structure.append(f"{indent}├── {folder_name}/")
+            
+            # 디렉토리와 파일을 분리하고 정렬
+            dirs.sort()
+            files.sort()
+            
+            # 하위 디렉토리 출력
+            for directory in dirs:
+                structure.append(f"{indent}    ├── {directory}/")
+            
+            # 파일 출력
+            for file in files:
+                if file == "README.md" or file == "update_readme.py":
+                    structure.append(f"{indent}    └── {file}")
+        
         return "\n".join(structure)
 
         
