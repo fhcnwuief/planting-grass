@@ -37,61 +37,35 @@
     ├── Java/
     ├── Oracle/
     ├── Python3/
-    ├── README.md
+    └── README.md
     └── update_readme.py
         ├── info/
-            └── exclude
         ├── branches/
         ├── refs/
             ├── heads/
             ├── remotes/
             ├── tags/
             ├── heads/
-                └── main
             ├── remotes/
                 ├── origin/
                 ├── origin/
-                    └── main
             ├── tags/
         ├── logs/
             ├── refs/
-            └── HEAD
             ├── refs/
                 ├── heads/
                 ├── remotes/
                 ├── heads/
-                    └── main
                 ├── remotes/
                     ├── origin/
                     ├── origin/
-                        └── main
         ├── objects/
             ├── info/
             ├── pack/
             ├── info/
             ├── pack/
-                ├── pack-1748f15a03b4e279f384e58eec8ba3b833b59101.idx
-                ├── pack-1748f15a03b4e279f384e58eec8ba3b833b59101.pack
-                └── pack-1748f15a03b4e279f384e58eec8ba3b833b59101.rev
         ├── hooks/
-            ├── applypatch-msg.sample
-            ├── commit-msg.sample
-            ├── fsmonitor-watchman.sample
-            ├── post-update.sample
-            ├── pre-applypatch.sample
-            ├── pre-commit.sample
-            ├── pre-merge-commit.sample
-            ├── pre-push.sample
-            ├── pre-rebase.sample
-            ├── pre-receive.sample
-            ├── prepare-commit-msg.sample
-            ├── push-to-checkout.sample
-            ├── sendemail-validate.sample
-            └── update.sample
-    ├── .github/
         ├── workflows/
-        ├── workflows/
-            └── python-app.yml
     ├── Java/
         ├── 프로그래머스/
         ├── 프로그래머스/
@@ -100,8 +74,7 @@
             ├── 0/
                 ├── 120804. 두 수의 곱/
                 ├── 120804. 두 수의 곱/
-                    ├── README.md
-                    └── 두 수의 곱.java
+                    └── README.md
             ├── 1/
                 ├── 12903. 가운데 글자 가져오기/
                 ├── 12906. 같은 숫자는 싫어/
@@ -151,146 +124,99 @@
                 ├── 86491. 최소직사각형/
                 ├── 87389. 나머지가 1이 되는 수 찾기/
                 ├── 12903. 가운데 글자 가져오기/
-                    ├── README.md
-                    └── 가운데 글자 가져오기.java
+                    └── README.md
                 ├── 12906. 같은 숫자는 싫어/
-                    ├── README.md
-                    └── 같은 숫자는 싫어.java
+                    └── README.md
                 ├── 12910. 나누어 떨어지는 숫자 배열/
-                    ├── README.md
-                    └── 나누어 떨어지는 숫자 배열.java
+                    └── README.md
                 ├── 12912. 두 정수 사이의 합/
-                    ├── README.md
-                    └── 두 정수 사이의 합.java
+                    └── README.md
                 ├── 12915. 문자열 내 마음대로 정렬하기/
-                    ├── README.md
-                    └── 문자열 내 마음대로 정렬하기.java
+                    └── README.md
                 ├── 12916. 문자열 내 p와 y의 개수/
-                    ├── README.md
-                    └── 문자열 내 p와 y의 개수.java
+                    └── README.md
                 ├── 12917. 문자열 내림차순으로 배치하기/
-                    ├── README.md
-                    └── 문자열 내림차순으로 배치하기.java
+                    └── README.md
                 ├── 12918. 문자열 다루기 기본/
-                    ├── README.md
-                    └── 문자열 다루기 기본.java
+                    └── README.md
                 ├── 12919. 서울에서 김서방 찾기/
-                    ├── README.md
-                    └── 서울에서 김서방 찾기.java
+                    └── README.md
                 ├── 12922. 수박수박수박수박수박수？/
-                    ├── README.md
-                    └── 수박수박수박수박수박수？.java
+                    └── README.md
                 ├── 12925. 문자열을 정수로 바꾸기/
-                    ├── README.md
-                    └── 문자열을 정수로 바꾸기.java
+                    └── README.md
                 ├── 12926. 시저 암호/
-                    ├── README.md
-                    └── 시저 암호.java
+                    └── README.md
                 ├── 12928. 약수의 합/
-                    ├── README.md
-                    └── 약수의 합.java
+                    └── README.md
                 ├── 12930. 이상한 문자 만들기/
-                    ├── README.md
-                    └── 이상한 문자 만들기.java
+                    └── README.md
                 ├── 12931. 자릿수 더하기/
-                    ├── README.md
-                    └── 자릿수 더하기.java
+                    └── README.md
                 ├── 12932. 자연수 뒤집어 배열로 만들기/
-                    ├── README.md
-                    └── 자연수 뒤집어 배열로 만들기.java
+                    └── README.md
                 ├── 12933. 정수 내림차순으로 배치하기/
-                    ├── README.md
-                    └── 정수 내림차순으로 배치하기.java
+                    └── README.md
                 ├── 12934. 정수 제곱근 판별/
-                    ├── README.md
-                    └── 정수 제곱근 판별.java
+                    └── README.md
                 ├── 12935. 제일 작은 수 제거하기/
-                    ├── README.md
-                    └── 제일 작은 수 제거하기.java
+                    └── README.md
                 ├── 12937. 짝수와 홀수/
-                    ├── README.md
-                    └── 짝수와 홀수.java
+                    └── README.md
                 ├── 12940. 최대공약수와 최소공배수/
-                    ├── README.md
-                    └── 최대공약수와 최소공배수.java
+                    └── README.md
                 ├── 12943. 콜라츠 추측/
-                    ├── README.md
-                    └── 콜라츠 추측.java
+                    └── README.md
                 ├── 12944. 평균 구하기/
-                    ├── README.md
-                    └── 평균 구하기.java
+                    └── README.md
                 ├── 12947. 하샤드 수/
-                    ├── README.md
-                    └── 하샤드 수.java
+                    └── README.md
                 ├── 12948. 핸드폰 번호 가리기/
-                    ├── README.md
-                    └── 핸드폰 번호 가리기.java
+                    └── README.md
                 ├── 12950. 행렬의 덧셈/
-                    ├── README.md
-                    └── 행렬의 덧셈.java
+                    └── README.md
                 ├── 12954. x만큼 간격이 있는 n개의 숫자/
-                    ├── README.md
-                    └── x만큼 간격이 있는 n개의 숫자.java
+                    └── README.md
                 ├── 12969. 직사각형 별찍기/
-                    ├── README.md
-                    └── 직사각형 별찍기.java
+                    └── README.md
                 ├── 12982. 예산/
-                    ├── README.md
-                    └── 예산.java
+                    └── README.md
                 ├── 131705. 삼총사/
-                    ├── README.md
-                    └── 삼총사.java
+                    └── README.md
                 ├── 142086. 가장 가까운 같은 글자/
-                    ├── README.md
-                    └── 가장 가까운 같은 글자.java
+                    └── README.md
                 ├── 147355. 크기가 작은 부분문자열/
-                    ├── README.md
-                    └── 크기가 작은 부분문자열.java
+                    └── README.md
                 ├── 17682. ［1차］ 다트 게임/
-                    ├── README.md
-                    └── ［1차］ 다트 게임.java
+                    └── README.md
                 ├── 1845. 폰켓몬/
-                    ├── README.md
-                    └── 폰켓몬.java
+                    └── README.md
                 ├── 250137. ［PCCP 기출문제］ 1번 ／ 붕대 감기/
-                    ├── README.md
-                    └── ［PCCP 기출문제］ 1번 ／ 붕대 감기.java
+                    └── README.md
                 ├── 42748. K번째수/
-                    ├── K번째수.java
                     └── README.md
                 ├── 64061. 크레인 인형뽑기 게임/
-                    ├── README.md
-                    └── 크레인 인형뽑기 게임.java
+                    └── README.md
                 ├── 68644. 두 개 뽑아서 더하기/
-                    ├── README.md
-                    └── 두 개 뽑아서 더하기.java
+                    └── README.md
                 ├── 68935. 3진법 뒤집기/
-                    ├── 3진법 뒤집기.java
                     └── README.md
                 ├── 70128. 내적/
-                    ├── README.md
-                    └── 내적.java
+                    └── README.md
                 ├── 76501. 음양 더하기/
-                    ├── README.md
-                    └── 음양 더하기.java
+                    └── README.md
                 ├── 77884. 약수의 개수와 덧셈/
-                    ├── README.md
-                    └── 약수의 개수와 덧셈.java
+                    └── README.md
                 ├── 81301. 숫자 문자열과 영단어/
-                    ├── README.md
-                    └── 숫자 문자열과 영단어.java
+                    └── README.md
                 ├── 82612. 부족한 금액 계산하기/
-                    ├── README.md
-                    └── 부족한 금액 계산하기.java
+                    └── README.md
                 ├── 86051. 없는 숫자 더하기/
-                    ├── README.md
-                    └── 없는 숫자 더하기.java
+                    └── README.md
                 ├── 86491. 최소직사각형/
-                    ├── README.md
-                    └── 최소직사각형.java
+                    └── README.md
                 ├── 87389. 나머지가 1이 되는 수 찾기/
-                    ├── README.md
-                    └── 나머지가 1이 되는 수 찾기.java
+                    └── README.md
     ├── Oracle/
         ├── 프로그래머스/
         ├── 프로그래머스/
@@ -324,77 +250,53 @@
                 ├── 59407. 이름이 있는 동물의 아이디/
                 ├── 59415. 최댓값 구하기/
                 ├── 131112. 강원도에 위치한 생산공장 목록 출력하기/
-                    ├── README.md
-                    └── 강원도에 위치한 생산공장 목록 출력하기.sql
+                    └── README.md
                 ├── 131114. 경기도에 위치한 식품창고 목록 출력하기/
-                    ├── README.md
-                    └── 경기도에 위치한 식품창고 목록 출력하기.sql
+                    └── README.md
                 ├── 131528. 나이 정보가 없는 회원 수 구하기/
-                    ├── README.md
-                    └── 나이 정보가 없는 회원 수 구하기.sql
+                    └── README.md
                 ├── 131535. 조건에 맞는 회원수 구하기/
-                    ├── README.md
-                    └── 조건에 맞는 회원수 구하기.sql
+                    └── README.md
                 ├── 131697. 가장 비싼 상품 구하기/
-                    ├── README.md
-                    └── 가장 비싼 상품 구하기.sql
+                    └── README.md
                 ├── 132201. 12세 이하인 여자 환자 목록 출력하기/
-                    ├── 12세 이하인 여자 환자 목록 출력하기.sql
                     └── README.md
                 ├── 132203. 흉부외과 또는 일반외과 의사 목록 출력하기/
-                    ├── README.md
-                    └── 흉부외과 또는 일반외과 의사 목록 출력하기.sql
+                    └── README.md
                 ├── 133024. 인기있는 아이스크림/
-                    ├── README.md
-                    └── 인기있는 아이스크림.sql
+                    └── README.md
                 ├── 133025. 과일로 만든 아이스크림 고르기/
-                    ├── README.md
-                    └── 과일로 만든 아이스크림 고르기.sql
+                    └── README.md
                 ├── 144853. 조건에 맞는 도서 리스트 출력하기/
-                    ├── README.md
-                    └── 조건에 맞는 도서 리스트 출력하기.sql
+                    └── README.md
                 ├── 151136. 평균 일일 대여 요금 구하기/
-                    ├── README.md
-                    └── 평균 일일 대여 요금 구하기.sql
+                    └── README.md
                 ├── 151138. 자동차 대여 기록에서 장기／단기 대여 구분하기/
-                    ├── README.md
-                    └── 자동차 대여 기록에서 장기／단기 대여 구분하기.sql
+                    └── README.md
                 ├── 157343. 특정 옵션이 포함된 자동차 리스트 구하기/
-                    ├── README.md
-                    └── 특정 옵션이 포함된 자동차 리스트 구하기.sql
+                    └── README.md
                 ├── 164673. 조건에 부합하는 중고거래 댓글 조회하기/
-                    ├── README.md
-                    └── 조건에 부합하는 중고거래 댓글 조회하기.sql
+                    └── README.md
                 ├── 59034. 모든 레코드 조회하기/
-                    ├── README.md
-                    └── 모든 레코드 조회하기.sql
+                    └── README.md
                 ├── 59035. 역순 정렬하기/
-                    ├── README.md
-                    └── 역순 정렬하기.sql
+                    └── README.md
                 ├── 59036. 아픈 동물 찾기/
-                    ├── README.md
-                    └── 아픈 동물 찾기.sql
+                    └── README.md
                 ├── 59037. 어린 동물 찾기/
-                    ├── README.md
-                    └── 어린 동물 찾기.sql
+                    └── README.md
                 ├── 59039. 이름이 없는 동물의 아이디/
-                    ├── README.md
-                    └── 이름이 없는 동물의 아이디.sql
+                    └── README.md
                 ├── 59403. 동물의 아이디와 이름/
-                    ├── README.md
-                    └── 동물의 아이디와 이름.sql
+                    └── README.md
                 ├── 59404. 여러 기준으로 정렬하기/
-                    ├── README.md
-                    └── 여러 기준으로 정렬하기.sql
+                    └── README.md
                 ├── 59405. 상위 n개 레코드/
-                    ├── README.md
-                    └── 상위 n개 레코드.sql
+                    └── README.md
                 ├── 59407. 이름이 있는 동물의 아이디/
-                    ├── README.md
-                    └── 이름이 있는 동물의 아이디.sql
+                    └── README.md
                 ├── 59415. 최댓값 구하기/
-                    ├── README.md
-                    └── 최댓값 구하기.sql
+                    └── README.md
             ├── 2/
                 ├── 131115. 가격이 제일 비싼 식품의 정보 출력하기/
                 ├── 131120. 3월에 태어난 여성 회원 목록 출력하기/
@@ -420,73 +322,50 @@
                 ├── 59412. 입양 시각 구하기（1）/
                 ├── 59414. DATETIME에서 DATE로 형 변환/
                 ├── 131115. 가격이 제일 비싼 식품의 정보 출력하기/
-                    ├── README.md
-                    └── 가격이 제일 비싼 식품의 정보 출력하기.sql
+                    └── README.md
                 ├── 131120. 3월에 태어난 여성 회원 목록 출력하기/
-                    ├── 3월에 태어난 여성 회원 목록 출력하기.sql
                     └── README.md
                 ├── 131529. 카테고리 별 상품 개수 구하기/
-                    ├── README.md
-                    └── 카테고리 별 상품 개수 구하기.sql
+                    └── README.md
                 ├── 131530. 가격대 별 상품 개수 구하기/
-                    ├── README.md
-                    └── 가격대 별 상품 개수 구하기.sql
+                    └── README.md
                 ├── 131533. 상품 별 오프라인 매출 구하기/
-                    ├── README.md
-                    └── 상품 별 오프라인 매출 구하기.sql
+                    └── README.md
                 ├── 131536. 재구매가 일어난 상품과 회원 리스트 구하기/
-                    ├── README.md
-                    └── 재구매가 일어난 상품과 회원 리스트 구하기.sql
+                    └── README.md
                 ├── 132202. 진료과별 총 예약 횟수 출력하기/
-                    ├── README.md
-                    └── 진료과별 총 예약 횟수 출력하기.sql
+                    └── README.md
                 ├── 133026. 성분으로 구분한 아이스크림 총 주문량/
-                    ├── README.md
-                    └── 성분으로 구분한 아이스크림 총 주문량.sql
+                    └── README.md
                 ├── 144854. 조건에 맞는 도서와 저자 리스트 출력하기/
-                    ├── README.md
-                    └── 조건에 맞는 도서와 저자 리스트 출력하기.sql
+                    └── README.md
                 ├── 151137. 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기/
-                    ├── README.md
-                    └── 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기.sql
+                    └── README.md
                 ├── 157342. 자동차 평균 대여 기간 구하기/
-                    ├── README.md
-                    └── 자동차 평균 대여 기간 구하기.sql
+                    └── README.md
                 ├── 164672. 조건에 부합하는 중고거래 상태 조회하기/
-                    ├── README.md
-                    └── 조건에 부합하는 중고거래 상태 조회하기.sql
+                    └── README.md
                 ├── 59038. 최솟값 구하기/
-                    ├── README.md
-                    └── 최솟값 구하기.sql
+                    └── README.md
                 ├── 59040. 고양이와 개는 몇 마리 있을까/
-                    ├── README.md
-                    └── 고양이와 개는 몇 마리 있을까.sql
+                    └── README.md
                 ├── 59041. 동명 동물 수 찾기/
-                    ├── README.md
-                    └── 동명 동물 수 찾기.sql
+                    └── README.md
                 ├── 59046. 루시와 엘라 찾기/
-                    ├── README.md
-                    └── 루시와 엘라 찾기.sql
+                    └── README.md
                 ├── 59047. 이름에 el이 들어가는 동물 찾기/
-                    ├── README.md
-                    └── 이름에 el이 들어가는 동물 찾기.sql
+                    └── README.md
                 ├── 59406. 동물 수 구하기/
-                    ├── README.md
-                    └── 동물 수 구하기.sql
+                    └── README.md
                 ├── 59408. 중복 제거하기/
-                    ├── README.md
-                    └── 중복 제거하기.sql
+                    └── README.md
                 ├── 59409. 중성화 여부 파악하기/
-                    ├── README.md
-                    └── 중성화 여부 파악하기.sql
+                    └── README.md
                 ├── 59410. NULL 처리하기/
-                    ├── NULL 처리하기.sql
                     └── README.md
                 ├── 59412. 입양 시각 구하기（1）/
-                    ├── README.md
-                    └── 입양 시각 구하기（1）.sql
+                    └── README.md
                 ├── 59414. DATETIME에서 DATE로 형 변환/
-                    ├── DATETIME에서 DATE로 형 변환.sql
                     └── README.md
             ├── 3/
                 ├── 131113. 조건별로 분류하여 주문상태 출력하기/
@@ -504,47 +383,33 @@
                 ├── 59411. 오랜 기간 보호한 동물（2）/
                 ├── 77487. 헤비 유저가 소유한 장소/
                 ├── 131113. 조건별로 분류하여 주문상태 출력하기/
-                    ├── README.md
-                    └── 조건별로 분류하여 주문상태 출력하기.sql
+                    └── README.md
                 ├── 131123. 즐겨찾기가 가장 많은 식당 정보 출력하기/
-                    ├── README.md
-                    └── 즐겨찾기가 가장 많은 식당 정보 출력하기.sql
+                    └── README.md
                 ├── 144855. 카테고리 별 도서 판매량 집계하기/
-                    ├── README.md
-                    └── 카테고리 별 도서 판매량 집계하기.sql
+                    └── README.md
                 ├── 151139. 대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기/
-                    ├── README.md
-                    └── 대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기.sql
+                    └── README.md
                 ├── 157340. 자동차 대여 기록에서 대여중 ／ 대여 가능 여부 구분하기/
-                    ├── README.md
-                    └── 자동차 대여 기록에서 대여중 ／ 대여 가능 여부 구분하기.sql
+                    └── README.md
                 ├── 157341. 대여 기록이 존재하는 자동차 리스트 구하기/
-                    ├── README.md
-                    └── 대여 기록이 존재하는 자동차 리스트 구하기.sql
+                    └── README.md
                 ├── 164668. 조건에 맞는 사용자와 총 거래금액 조회하기/
-                    ├── README.md
-                    └── 조건에 맞는 사용자와 총 거래금액 조회하기.sql
+                    └── README.md
                 ├── 164670. 조건에 맞는 사용자 정보 조회하기/
-                    ├── README.md
-                    └── 조건에 맞는 사용자 정보 조회하기.sql
+                    └── README.md
                 ├── 164671. 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기/
-                    ├── README.md
-                    └── 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기.sql
+                    └── README.md
                 ├── 59042. 없어진 기록 찾기/
-                    ├── README.md
-                    └── 없어진 기록 찾기.sql
+                    └── README.md
                 ├── 59043. 있었는데요 없었습니다/
-                    ├── README.md
-                    └── 있었는데요 없었습니다.sql
+                    └── README.md
                 ├── 59044. 오랜 기간 보호한 동물（1）/
-                    ├── README.md
-                    └── 오랜 기간 보호한 동물（1）.sql
+                    └── README.md
                 ├── 59411. 오랜 기간 보호한 동물（2）/
-                    ├── README.md
-                    └── 오랜 기간 보호한 동물（2）.sql
+                    └── README.md
                 ├── 77487. 헤비 유저가 소유한 장소/
-                    ├── README.md
-                    └── 헤비 유저가 소유한 장소.sql
+                    └── README.md
             ├── 4/
                 ├── 131116. 식품분류별 가장 비싼 식품의 정보 조회하기/
                 ├── 131117. 5월 식품들의 총매출 조회하기/
@@ -559,41 +424,29 @@
                 ├── 59413. 입양 시각 구하기（2）/
                 ├── 62284. 우유와 요거트가 담긴 장바구니/
                 ├── 131116. 식품분류별 가장 비싼 식품의 정보 조회하기/
-                    ├── README.md
-                    └── 식품분류별 가장 비싼 식품의 정보 조회하기.sql
+                    └── README.md
                 ├── 131117. 5월 식품들의 총매출 조회하기/
-                    ├── 5월 식품들의 총매출 조회하기.sql
                     └── README.md
                 ├── 131118. 서울에 위치한 식당 목록 출력하기/
-                    ├── README.md
-                    └── 서울에 위치한 식당 목록 출력하기.sql
+                    └── README.md
                 ├── 131124. 그룹별 조건에 맞는 식당 목록 출력하기/
-                    ├── README.md
-                    └── 그룹별 조건에 맞는 식당 목록 출력하기.sql
+                    └── README.md
                 ├── 131532. 년， 월， 성별 별 상품 구매 회원 수 구하기/
-                    ├── README.md
-                    └── 년， 월， 성별 별 상품 구매 회원 수 구하기.sql
+                    └── README.md
                 ├── 131537. 오프라인／온라인 판매 데이터 통합하기/
-                    ├── README.md
-                    └── 오프라인／온라인 판매 데이터 통합하기.sql
+                    └── README.md
                 ├── 132204. 취소되지 않은 진료 예약 조회하기/
-                    ├── README.md
-                    └── 취소되지 않은 진료 예약 조회하기.sql
+                    └── README.md
                 ├── 133027. 주문량이 많은 아이스크림들 조회하기/
-                    ├── README.md
-                    └── 주문량이 많은 아이스크림들 조회하기.sql
+                    └── README.md
                 ├── 144856. 저자 별 카테고리 별 매출액 집계하기/
-                    ├── README.md
-                    └── 저자 별 카테고리 별 매출액 집계하기.sql
+                    └── README.md
                 ├── 59045. 보호소에서 중성화한 동물/
-                    ├── README.md
-                    └── 보호소에서 중성화한 동물.sql
+                    └── README.md
                 ├── 59413. 입양 시각 구하기（2）/
-                    ├── README.md
-                    └── 입양 시각 구하기（2）.sql
+                    └── README.md
                 ├── 62284. 우유와 요거트가 담긴 장바구니/
-                    ├── README.md
-                    └── 우유와 요거트가 담긴 장바구니.sql
+                    └── README.md
     ├── Python3/
         ├── 프로그래머스/
         ├── 프로그래머스/
@@ -707,323 +560,217 @@
                 ├── 181952. 문자열 출력하기/
                 ├── 250126. ［PCCE 기출문제］ 8번 ／ 창고 정리/
                 ├── 120583. 중복된 숫자 개수/
-                    ├── README.md
-                    └── 중복된 숫자 개수.py
+                    └── README.md
                 ├── 120585. 머쓱이보다 키 큰 사람/
-                    ├── README.md
-                    └── 머쓱이보다 키 큰 사람.py
+                    └── README.md
                 ├── 120802. 두 수의 합/
-                    ├── README.md
-                    └── 두 수의 합.py
+                    └── README.md
                 ├── 120803. 두 수의 차/
-                    ├── README.md
-                    └── 두 수의 차.py
+                    └── README.md
                 ├── 120804. 두 수의 곱/
-                    ├── README.md
-                    └── 두 수의 곱.py
+                    └── README.md
                 ├── 120805. 몫 구하기/
-                    ├── README.md
-                    └── 몫 구하기.py
+                    └── README.md
                 ├── 120806. 두 수의 나눗셈/
-                    ├── README.md
-                    └── 두 수의 나눗셈.py
+                    └── README.md
                 ├── 120807. 숫자 비교하기/
-                    ├── README.md
-                    └── 숫자 비교하기.py
+                    └── README.md
                 ├── 120808. 분수의 덧셈/
-                    ├── README.md
-                    └── 분수의 덧셈.py
+                    └── README.md
                 ├── 120809. 배열 두배 만들기/
-                    ├── README.md
-                    └── 배열 두배 만들기.py
+                    └── README.md
                 ├── 120810. 나머지 구하기/
-                    ├── README.md
-                    └── 나머지 구하기.py
+                    └── README.md
                 ├── 120811. 중앙값 구하기/
-                    ├── README.md
-                    └── 중앙값 구하기.py
+                    └── README.md
                 ├── 120812. 최빈값 구하기/
-                    ├── README.md
-                    └── 최빈값 구하기.py
+                    └── README.md
                 ├── 120813. 짝수는 싫어요/
-                    ├── README.md
-                    └── 짝수는 싫어요.py
+                    └── README.md
                 ├── 120814. 피자 나눠 먹기 （1）/
-                    ├── README.md
-                    └── 피자 나눠 먹기 （1）.py
+                    └── README.md
                 ├── 120815. 피자 나눠 먹기 （2）/
-                    ├── README.md
-                    └── 피자 나눠 먹기 （2）.py
+                    └── README.md
                 ├── 120816. 피자 나눠 먹기 （3）/
-                    ├── README.md
-                    └── 피자 나눠 먹기 （3）.py
+                    └── README.md
                 ├── 120817. 배열의 평균값/
-                    ├── README.md
-                    └── 배열의 평균값.py
+                    └── README.md
                 ├── 120818. 옷가게 할인 받기/
-                    ├── README.md
-                    └── 옷가게 할인 받기.py
+                    └── README.md
                 ├── 120819. 아이스 아메리카노/
-                    ├── README.md
-                    └── 아이스 아메리카노.py
+                    └── README.md
                 ├── 120820. 나이 출력/
-                    ├── README.md
-                    └── 나이 출력.py
+                    └── README.md
                 ├── 120821. 배열 뒤집기/
-                    ├── README.md
-                    └── 배열 뒤집기.py
+                    └── README.md
                 ├── 120822. 문자열 뒤집기/
-                    ├── README.md
-                    └── 문자열 뒤집기.py
+                    └── README.md
                 ├── 120823. 직각삼각형 출력하기/
-                    ├── README.md
-                    └── 직각삼각형 출력하기.py
+                    └── README.md
                 ├── 120824. 짝수 홀수 개수/
-                    ├── README.md
-                    └── 짝수 홀수 개수.py
+                    └── README.md
                 ├── 120825. 문자 반복 출력하기/
-                    ├── README.md
-                    └── 문자 반복 출력하기.py
+                    └── README.md
                 ├── 120826. 특정 문자 제거하기/
-                    ├── README.md
-                    └── 특정 문자 제거하기.py
+                    └── README.md
                 ├── 120829. 각도기/
-                    ├── README.md
-                    └── 각도기.py
+                    └── README.md
                 ├── 120830. 양꼬치/
-                    ├── README.md
-                    └── 양꼬치.py
+                    └── README.md
                 ├── 120831. 짝수의 합/
-                    ├── README.md
-                    └── 짝수의 합.py
+                    └── README.md
                 ├── 120833. 배열 자르기/
-                    ├── README.md
-                    └── 배열 자르기.py
+                    └── README.md
                 ├── 120834. 외계행성의 나이/
-                    ├── README.md
-                    └── 외계행성의 나이.py
+                    └── README.md
                 ├── 120835. 진료 순서 정하기/
-                    ├── README.md
-                    └── 진료 순서 정하기.py
+                    └── README.md
                 ├── 120836. 순서쌍의 개수/
-                    ├── README.md
-                    └── 순서쌍의 개수.py
+                    └── README.md
                 ├── 120837. 개미 군단/
-                    ├── README.md
-                    └── 개미 군단.py
+                    └── README.md
                 ├── 120838. 모스부호 （1）/
-                    ├── README.md
-                    └── 모스부호 （1）.py
+                    └── README.md
                 ├── 120839. 가위 바위 보/
-                    ├── README.md
-                    └── 가위 바위 보.py
+                    └── README.md
                 ├── 120840. 구슬을 나누는 경우의 수/
-                    ├── README.md
-                    └── 구슬을 나누는 경우의 수.py
+                    └── README.md
                 ├── 120841. 점의 위치 구하기/
-                    ├── README.md
-                    └── 점의 위치 구하기.py
+                    └── README.md
                 ├── 120842. 2차원으로 만들기/
-                    ├── 2차원으로 만들기.py
                     └── README.md
                 ├── 120843. 공 던지기/
-                    ├── README.md
-                    └── 공 던지기.py
+                    └── README.md
                 ├── 120844. 배열 회전시키기/
-                    ├── README.md
-                    └── 배열 회전시키기.py
+                    └── README.md
                 ├── 120845. 주사위의 개수/
-                    ├── README.md
-                    └── 주사위의 개수.py
+                    └── README.md
                 ├── 120846. 합성수 찾기/
-                    ├── README.md
-                    └── 합성수 찾기.py
+                    └── README.md
                 ├── 120847. 최댓값 만들기 （1）/
-                    ├── README.md
-                    └── 최댓값 만들기 （1）.py
+                    └── README.md
                 ├── 120848. 팩토리얼/
-                    ├── README.md
-                    └── 팩토리얼.py
+                    └── README.md
                 ├── 120849. 모음 제거/
-                    ├── README.md
-                    └── 모음 제거.py
+                    └── README.md
                 ├── 120850. 문자열 정렬하기 （1）/
-                    ├── README.md
-                    └── 문자열 정렬하기 （1）.py
+                    └── README.md
                 ├── 120851. 숨어있는 숫자의 덧셈 （1）/
-                    ├── README.md
-                    └── 숨어있는 숫자의 덧셈 （1）.py
+                    └── README.md
                 ├── 120852. 소인수분해/
-                    ├── README.md
-                    └── 소인수분해.py
+                    └── README.md
                 ├── 120853. 컨트롤 제트/
-                    ├── README.md
-                    └── 컨트롤 제트.py
+                    └── README.md
                 ├── 120854. 배열 원소의 길이/
-                    ├── README.md
-                    └── 배열 원소의 길이.py
+                    └── README.md
                 ├── 120860. 직사각형 넓이 구하기/
-                    ├── README.md
-                    └── 직사각형 넓이 구하기.py
+                    └── README.md
                 ├── 120861. 캐릭터의 좌표/
-                    ├── README.md
-                    └── 캐릭터의 좌표.py
+                    └── README.md
                 ├── 120862. 최댓값 만들기 （2）/
-                    ├── README.md
-                    └── 최댓값 만들기 （2）.py
+                    └── README.md
                 ├── 120863. 다항식 더하기/
-                    ├── README.md
-                    └── 다항식 더하기.py
+                    └── README.md
                 ├── 120864. 숨어있는 숫자의 덧셈 （2）/
-                    ├── README.md
-                    └── 숨어있는 숫자의 덧셈 （2）.py
+                    └── README.md
                 ├── 120866. 안전지대/
-                    ├── README.md
-                    └── 안전지대.py
+                    └── README.md
                 ├── 120868. 삼각형의 완성조건 （2）/
-                    ├── README.md
-                    └── 삼각형의 완성조건 （2）.py
+                    └── README.md
                 ├── 120869. 외계어 사전/
-                    ├── README.md
-                    └── 외계어 사전.py
+                    └── README.md
                 ├── 120871. 저주의 숫자 3/
-                    ├── README.md
-                    └── 저주의 숫자 3.py
+                    └── README.md
                 ├── 120875. 평행/
-                    ├── README.md
-                    └── 평행.py
+                    └── README.md
                 ├── 120876. 겹치는 선분의 길이/
-                    ├── README.md
-                    └── 겹치는 선분의 길이.py
+                    └── README.md
                 ├── 120878. 유한소수 판별하기/
-                    ├── README.md
-                    └── 유한소수 판별하기.py
+                    └── README.md
                 ├── 120880. 특이한 정렬/
-                    ├── README.md
-                    └── 특이한 정렬.py
+                    └── README.md
                 ├── 120882. 등수 매기기/
-                    ├── README.md
-                    └── 등수 매기기.py
+                    └── README.md
                 ├── 120883. 로그인 성공？/
-                    ├── README.md
-                    └── 로그인 성공？.py
+                    └── README.md
                 ├── 120884. 치킨 쿠폰/
-                    ├── README.md
-                    └── 치킨 쿠폰.py
+                    └── README.md
                 ├── 120885. 이진수 더하기/
-                    ├── README.md
-                    └── 이진수 더하기.py
+                    └── README.md
                 ├── 120886. A로 B 만들기/
-                    ├── A로 B 만들기.py
                     └── README.md
                 ├── 120887. k의 개수/
-                    ├── README.md
-                    └── k의 개수.py
+                    └── README.md
                 ├── 120888. 중복된 문자 제거/
-                    ├── README.md
-                    └── 중복된 문자 제거.py
+                    └── README.md
                 ├── 120889. 삼각형의 완성조건 （1）/
-                    ├── README.md
-                    └── 삼각형의 완성조건 （1）.py
+                    └── README.md
                 ├── 120890. 가까운 수/
-                    ├── README.md
-                    └── 가까운 수.py
+                    └── README.md
                 ├── 120891. 369게임/
-                    ├── 369게임.py
                     └── README.md
                 ├── 120892. 암호 해독/
-                    ├── README.md
-                    └── 암호 해독.py
+                    └── README.md
                 ├── 120893. 대문자와 소문자/
-                    ├── README.md
-                    └── 대문자와 소문자.py
+                    └── README.md
                 ├── 120894. 영어가 싫어요/
-                    ├── README.md
-                    └── 영어가 싫어요.py
+                    └── README.md
                 ├── 120895. 인덱스 바꾸기/
-                    ├── README.md
-                    └── 인덱스 바꾸기.py
+                    └── README.md
                 ├── 120896. 한 번만 등장한 문자/
-                    ├── README.md
-                    └── 한 번만 등장한 문자.py
+                    └── README.md
                 ├── 120897. 약수 구하기/
-                    ├── README.md
-                    └── 약수 구하기.py
+                    └── README.md
                 ├── 120898. 편지/
-                    ├── README.md
-                    └── 편지.py
+                    └── README.md
                 ├── 120899. 가장 큰 수 찾기/
-                    ├── README.md
-                    └── 가장 큰 수 찾기.py
+                    └── README.md
                 ├── 120902. 문자열 계산하기/
-                    ├── README.md
-                    └── 문자열 계산하기.py
+                    └── README.md
                 ├── 120903. 배열의 유사도/
-                    ├── README.md
-                    └── 배열의 유사도.py
+                    └── README.md
                 ├── 120904. 숫자 찾기/
-                    ├── README.md
-                    └── 숫자 찾기.py
+                    └── README.md
                 ├── 120905. n의 배수 고르기/
-                    ├── README.md
-                    └── n의 배수 고르기.py
+                    └── README.md
                 ├── 120906. 자릿수 더하기/
-                    ├── README.md
-                    └── 자릿수 더하기.py
+                    └── README.md
                 ├── 120907. OX퀴즈/
-                    ├── OX퀴즈.py
                     └── README.md
                 ├── 120908. 문자열안에 문자열/
-                    ├── README.md
-                    └── 문자열안에 문자열.py
+                    └── README.md
                 ├── 120909. 제곱수 판별하기/
-                    ├── README.md
-                    └── 제곱수 판별하기.py
+                    └── README.md
                 ├── 120910. 세균 증식/
-                    ├── README.md
-                    └── 세균 증식.py
+                    └── README.md
                 ├── 120911. 문자열 정렬하기 （2）/
-                    ├── README.md
-                    └── 문자열 정렬하기 （2）.py
+                    └── README.md
                 ├── 120912. 7의 개수/
-                    ├── 7의 개수.py
                     └── README.md
                 ├── 120913. 잘라서 배열로 저장하기/
-                    ├── README.md
-                    └── 잘라서 배열로 저장하기.py
+                    └── README.md
                 ├── 120921. 문자열 밀기/
-                    ├── README.md
-                    └── 문자열 밀기.py
+                    └── README.md
                 ├── 120923. 연속된 수의 합/
-                    ├── README.md
-                    └── 연속된 수의 합.py
+                    └── README.md
                 ├── 120924. 다음에 올 숫자/
-                    ├── README.md
-                    └── 다음에 올 숫자.py
+                    └── README.md
                 ├── 120956. 옹알이 （1）/
-                    ├── README.md
-                    └── 옹알이 （1）.py
+                    └── README.md
                 ├── 181831. 특별한 이차원 배열 2/
-                    ├── README.md
-                    └── 특별한 이차원 배열 2.py
+                    └── README.md
                 ├── 181832. 정수를 나선형으로 배치하기/
-                    ├── README.md
-                    └── 정수를 나선형으로 배치하기.py
+                    └── README.md
                 ├── 181893. 배열 조각하기/
-                    ├── README.md
-                    └── 배열 조각하기.py
+                    └── README.md
                 ├── 181916. 주사위 게임 3/
-                    ├── README.md
-                    └── 주사위 게임 3.py
+                    └── README.md
                 ├── 181932. 코드 처리하기/
-                    ├── README.md
-                    └── 코드 처리하기.py
+                    └── README.md
                 ├── 181952. 문자열 출력하기/
-                    ├── README.md
-                    └── 문자열 출력하기.py
+                    └── README.md
                 ├── 250126. ［PCCE 기출문제］ 8번 ／ 창고 정리/
-                    ├── README.md
-                    └── ［PCCE 기출문제］ 8번 ／ 창고 정리.py
+                    └── README.md
             ├── 1/
                 ├── 12928. 약수의 합/
                 ├── 12931. 자릿수 더하기/
@@ -1031,18 +778,13 @@
                 ├── 42576. 완주하지 못한 선수/
                 ├── 72410. 신규 아이디 추천/
                 ├── 12928. 약수의 합/
-                    ├── README.md
-                    └── 약수의 합.py
+                    └── README.md
                 ├── 12931. 자릿수 더하기/
-                    ├── README.md
-                    └── 자릿수 더하기.py
+                    └── README.md
                 ├── 12937. 짝수와 홀수/
-                    ├── README.md
-                    └── 짝수와 홀수.py
+                    └── README.md
                 ├── 42576. 완주하지 못한 선수/
-                    ├── README.md
-                    └── 완주하지 못한 선수.py
+                    └── README.md
                 ├── 72410. 신규 아이디 추천/
-                    ├── README.md
-                    └── 신규 아이디 추천.py
+                    └── README.md
 ```
