@@ -30,9 +30,8 @@ def update_readme(repo_path, counts):
         for root, dirs, files in os.walk(base_dir):
 
             # .git 디렉토리 내부를 제외
-            if ".git" in root.split(os.sep):
+            if ".git",".github" in root.split(os.sep):
                 continue
-
             
             parts = root.split(os.sep)
             level = len(parts) - len(base_dir.split(os.sep))  # 디렉토리 깊이 계산
