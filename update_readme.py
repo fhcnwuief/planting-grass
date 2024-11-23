@@ -27,7 +27,7 @@ def update_readme(repo_path, counts):
         """디렉토리 구조를 Markdown 형식으로 반환"""
         # README.md 파일 발견 시 멈추고 디렉토리 구조를 Markdown 형식으로 반환
         structure = []
-        visited = set()  # 이미 방문한 디렉토리 추적
+         visited = set()  # 이미 방문한 디렉토리 추적
         
         for root, dirs, files in os.walk(base_dir):
             parts = root.split(os.sep)
@@ -79,6 +79,7 @@ def update_readme(repo_path, counts):
         
         # 디렉토리 요약
         readme.write("## 디렉토리 요약")
+        
         for platform, count in sorted(counts.items()):
             if ".git" not in platform:  # .git이 포함된 항목은 출력하지 않음
                 readme.write(f"- **{platform}**: {count} problems\n")
