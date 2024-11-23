@@ -73,7 +73,8 @@ def update_readme(repo_path, counts):
         for file in root_files:
             file_path = os.path.join(base_dir, file)
             if os.path.exists(file_path):
-                structure.append(f"    └── {file}")
+                marker = "└──" if i == len(root_files) - 1 else "├──"
+                structure.append(f"    {marker} {file}")
                                  
         return "\n".join(structure)
 
