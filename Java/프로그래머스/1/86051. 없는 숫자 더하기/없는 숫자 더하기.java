@@ -1,13 +1,11 @@
-class Solution{
+class Solution {
     public int solution(int[] numbers) {
-        int answer = 0;
-        int[] check = new int[10];
-        for(int i = 0;i<numbers.length;i++){
-            check[numbers[i]] = 1;
+        int answer = -1;
+        
+        int num = 45;
+        for (int i : numbers) {
+            num -= i;
         }
-        for(int i = 0;i < check.length;i++){
-            if(check[i] != 1){answer += i;}
-        }
-        return answer;
+        return num;
     }
 }
