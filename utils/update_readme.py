@@ -115,6 +115,7 @@ def update_readme(repo_path, counts, total_count):
         readme.write("\n")
 
 if __name__ == "__main__":
-    REPO_PATH = "."  # 현재 디렉토리 기준
+    #REPO_PATH = "."  # 현재 디렉토리 기준
+    REPO_PATH = os.path.dirname(os.path.dirname(__file__))  # 루트 디렉토리 기준으로 설정
     counts, total_count = count_files_by_platform(REPO_PATH)
     update_readme(REPO_PATH, counts, total_count)
