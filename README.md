@@ -3,6 +3,7 @@
 목표 : 시간 나는 대로 문제 풀고, 저장하기! 
 ## 소개
 [This is an auto push repository for Baekjoon Online Judge created with BaekjoonHub.]
+
 이 저장소는 프로그래밍 문제 풀이를 기록한 공간입니다.
 
 주요 플랫폼은 **백준**, **프로그래머스**입니다.
