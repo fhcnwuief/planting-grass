@@ -6,15 +6,18 @@ def count_files_by_platform(base_dir):
     counts = defaultdict(int)
 
     for root, dirs, files in os.walk(base_dir):
-        parts = root.split(os.sep)  # parts는 root를 os.sep로 분할한 리스트
+        #parts = root.split(os.sep)  # parts는 root를 os.sep로 분할한 리스트
+         # 상대 경로 계산 (base_dir 이후의 경로만 추출)
+        relative_path = os.path.relpath(root, base_dir)
+        parts = relative_path.split(os.sep)
         
         # .git 디렉토리 건너뛰기
         if ".git" in parts:
             continue  # .git 디렉토리는 탐색하지 않음
         
         # "Java/프로그래머스/0"까지 디렉토리 추출
-        if len(parts) > 3:  # 디렉토리 경로가 "언어/플랫폼/난이도" 구조일 경우
-            problem_folder = os.sep.join(parts[1:4])  # 상위 3단계 결합 (언어/플랫폼/난이도)
+        if len(parts) >= 3:  # 디렉토리 구조가 적어도 3단계 이상일 때만 처리
+            problem_folder = os.path.join(parts[0], parts[1], parts[2])  # 상위 3단계 결합 (언어/플랫폼/난이도)
 
             # 각 디렉토리 별로 README.md 파일만 포함
             readme_files = [f for f in files if f == "README.md"]
