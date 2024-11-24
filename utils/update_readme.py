@@ -80,7 +80,7 @@ def update_readme(repo_path, counts, total_count):
                 continue
 
         # 루트 레벨에서 파일 추가
-        root_files = ["README.md", "update_readme.py"]
+        root_files = ["README.md"]
         for i, file in enumerate(root_files):
             file_path = os.path.join(base_dir, file)
             if os.path.exists(file_path):
