@@ -69,6 +69,11 @@ def update_readme(repo_path, counts, total_count):
             dirs.sort()
             files.sort()
 
+             # 파일 표시
+            for i, file in enumerate(files):
+            file_marker = "└──" if i == len(files) - 1 else "├──"
+            structure.append(f"{indent}    {file_marker} {file}")
+
             # 탐색의 깊이가 3을 초과하면 하위 디렉토리 탐색 중단
             if level >= MAX_LEVEL:
                 dirs.clear()
