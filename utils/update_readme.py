@@ -12,6 +12,10 @@ def count_files_by_platform(base_dir):
         # .git 또는 .github 디렉토리 건너뛰기
         if ".git" in relative_path or ".github" in relative_path:
             continue
+            
+        # "Java/프로그래머스/0"까지 디렉토리 추출
+        if len(parts) > 3:
+            problem_folder = os.sep.join(parts[1:4])  # 상위 3단계 결합 (언어/플랫폼/난이도)
 
         # README.md 파일만 포함
         readme_files = [f for f in files if f == "README.md"]
