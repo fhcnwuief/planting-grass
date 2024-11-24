@@ -71,6 +71,9 @@ def update_readme(repo_path, counts, total_count):
 
              # 파일 표시
             for i, file in enumerate(files):
+                if file == "README.md":
+                    continue
+                
                 file_marker = "└──" if i == len(files) - 1 else "├──"
                 structure.append(f"{indent}    {file_marker} {file}")
 
