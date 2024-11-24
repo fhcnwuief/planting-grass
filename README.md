@@ -16,6 +16,7 @@
 ## 디렉토리 구조 및 요약
 ```
 ├── planting-grass/
+    └── README.md
     ├── Java/
         ├── 프로그래머스/
             ├── 0/
@@ -32,6 +33,7 @@
             ├── 1/
             ├── 2/
     ├── utils/
+        └── update_readme.py
     ├── README.md
 ```
 ## 문제 풀이 현황
