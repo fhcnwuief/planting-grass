@@ -27,7 +27,7 @@ jobs:
       run: pip install --upgrade pip
 
     - name: Run Python script
-      run: python update_readme.py
+      run: python utils/update_readme.py
 
     - name: Commit changes
       run: |
