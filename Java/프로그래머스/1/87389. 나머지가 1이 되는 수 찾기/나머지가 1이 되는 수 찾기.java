@@ -1,7 +1,12 @@
 class Solution {
     public int solution(int n) {
-        int answer = 1;
-        while(n % answer != 1){answer++;}
+        int answer = 0;
+        for(int i = 2; i < n; i++){
+            if(n % i  == 1){
+                answer = i;
+                break;
+            }
+        }
         return answer;
     }
 }
