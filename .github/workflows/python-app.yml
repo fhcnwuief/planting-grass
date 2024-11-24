@@ -26,6 +26,9 @@ jobs:
     - name: Install dependencies
       run: pip install --upgrade pip
 
+    - name: Add execute permissions to script
+      run: chmod +x utils/update_readme.py  # 실행 권한 추가 
+
     - name: Run Python script
       run: python utils/update_readme.py
 
