@@ -88,7 +88,7 @@ def update_readme(repo_path, counts, total_count):
         readme.write("목표 : 시간 나는 대로 문제 풀고, 저장하기! \n")
         # readme.write("![Banner](https://example.com/banner.png)\n\n")  # 예시 이미지 URL
         readme.write("## 소개\n")
-        readme.write("[This is an auto push repository for Baekjoon Online Judge created with BaekjoonHub.]")
+        readme.write("[This is an auto push repository for Baekjoon Online Judge created with BaekjoonHub.]\n")
         readme.write("이 저장소는 프로그래밍 문제 풀이를 기록한 공간입니다.\n\n")
         readme.write("주요 플랫폼은 **백준**, **프로그래머스**입니다.\n\n")
     
